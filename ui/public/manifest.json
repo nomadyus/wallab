@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "FancyCars.com",
+  "name": "Simple React & Redux App showcasing various fancy cars.",
   "icons": [
     {
       "src": "favicon.ico",

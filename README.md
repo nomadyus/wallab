@@ -17,6 +17,10 @@ Repository containing some test projects to showcase skills in React/Redux as we
 
 ### API
 
+
+## Running ALL the Apps
+
+
 ## Structure
 
 

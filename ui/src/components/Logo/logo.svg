@@ -1,0 +1,7 @@
+<svg 
+	xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+	<rect class="hor" width="20" height="4" x="0" y="0" style="fill:#e91e63"></rect>
+	<rect class="ver" width="4" height="20" x="16" y="0" style="fill:#e91e63"></rect>
+	<rect class="hor" width="20" height="4" x="0" y="16" style="fill:#e91e63"></rect>
+	<rect class="ver" width="4" height="20" x="0" y="0" style="fill:#e91e63"></rect>
+</svg>

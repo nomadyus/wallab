@@ -1,3 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0px;
+  overflow: hidden;
+}
+
 .fancy-font {
   font-family: 'Fancy Script';
 }
@@ -40,15 +51,23 @@
 }
 
 @keyframes Spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 
-@media screen and (min-width: 320px) and (max-width: 1025px) { /* Small */
+@media screen and (min-width: 320px) and (max-width: 1025px) {
+
+  /* Small */
   .pad-large {
     padding: 1.5em;
   }
+
   .pad-x-large {
     padding: 2em;
   }

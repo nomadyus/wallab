@@ -1,21 +1,10 @@
-import axios from 'axios'
+// import axios from 'axios'
+// import fetch from 'cross-fetch'
+import { initialState } from '../reducers/initialState'
+
 
 const bffClient = {
-  getItemAvailability: (id) => {
-    return {
-      available: 'In Dealership'
-    };
-  },
-  getItems: () => {
-    return [{
-      id: 1,
-      img: "http://myfancycar/image",
-      name: "My Fancy Car",
-      make: "MyMake",
-      model: "MyModel",
-      year: 2018
-    }];
-  }
+  getInventory: () => Promise.resolve(initialState)
 };
 
 export default bffClient

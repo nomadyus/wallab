@@ -1,26 +1,37 @@
-import * as types from './types';
+import * as actionTypes from './types';
 
-export const setSortFilterSuccess = sortBy => ({
-  type: types.SET_SORT_BY_SUCCESS,
-  sortBy
+export const sortBy = (sort, items) => ({
+  type: actionTypes.SORT_BY,
+  sort,
+  items: items.sort((a, b) => a[sort] - b[sort])
 });
 
-export const fetchItemsSuccess = items => ({
-  type: types.FETCH_ITEMS_SUCCESS,
+export const requestInventory = () => ({
+  type: actionTypes.REQUEST_INVENTORY
+});
+
+export const receivedInventory = items => ({
+  type: actionTypes.RECEIVED_INVENTORY,
+  receivedAt: Date.now(),
   items
 });
 
-export const fetchItemAvailabilitySuccess = availability => ({
-  type: types.FETCH_ITEM_AVAILABILITY_SUCCESS,
-  availability
-});
+export const fetchInventoryError = error => ({
+  type: actionTypes.FETCH_INVENTORY_ERROR,
+  error
+})
 
-export const sortItemByNameSuccess = items => ({
-  type: types.SORT_BY_NAME_SUCCESS,
-  items
-});
-
-export const sortByAvailabilitySuccess = items => ({
-  type: types.SORT_BY_NAME_SUCCESS,
-  items
-});
+export const fetchInventory = () => {
+  return (dispatch) => {
+    dispatch(requestInventory());
+    return bffClient
+      .getInventory()
+      .then((items) => {
+        dispatch(receivedInventory(items));
+      })
+      .catch((error) => {
+        console.log('An error occurred while fetching: ', error);
+        dispatch(fetchInventoryError(error));
+      })
+  };
+}

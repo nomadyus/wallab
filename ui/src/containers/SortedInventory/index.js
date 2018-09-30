@@ -3,6 +3,7 @@ import Inventory from  '../../components/Inventory';
 import * as types from '../../actions/types';
 
 const getInventory = (items, sortBy) => {
+  console.log({items});
   switch (sortBy) {
     case types.SORT_BY_NAME:
       return items.sort(a => a.name);

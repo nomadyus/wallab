@@ -1,13 +1,15 @@
 import * as types from '../actions/types';
-import initialState from './initialState';
 
-const sortFilter = (state = initialState.inventory, action) => {
+const inventorySorter = (state = {}, action) => {
   switch (action.type) {
-    case types.SET_SORT_BY:
-      return action.sortBy
+    case types.SORT_BY:
+      return {
+        ...state,
+        items: action.items.sort(a => a[action.sortBy])
+      }
     default:
       return state
   }
 };
 
-export default sortFilter
+export default inventorySorter

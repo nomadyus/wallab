@@ -1,12 +1,26 @@
-import * as types from '../actions/types';
-import initialState from './initialState';
+import * as actionTypes from '../actions/types';
 
-const inventory = (state = initialState.inventory, action) => {
+const inventory = (state = {}, action) => {
   switch (action.type) {
-    case types.FETCH_ITEMS_SUCCESS:
-      return action.items
-    case types.FETCH_ITEM_AVAILABILITY_SUCCESS:
-      return action.items
+    case actionTypes.FETCH_INVENTORY:
+      return {
+        ...state,
+        isFetching: true
+      };
+
+    case actionTypes.RECEIVED_INVENTORY:
+      return {
+        ...state,
+        isFetching: false,
+        items: action.items
+      };
+
+    case actionTypes.FETCH_INVENTORY_ERROR:
+      return {
+        ...state,
+        isFetching: false,
+        error: action.error,
+      };
     default:
       return state
   }

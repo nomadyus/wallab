@@ -1,29 +1,26 @@
 import * as types from './types';
 
-export const setSortFilter = sortBy => ({
-  type: types.SET_SORT_BY,
+export const setSortFilterSuccess = sortBy => ({
+  type: types.SET_SORT_BY_SUCCESS,
   sortBy
 });
 
-export const fetchItems = items => ({
-  type: types.FETCH_ITEMS,
+export const fetchItemsSuccess = items => ({
+  type: types.FETCH_ITEMS_SUCCESS,
   items
 });
 
-export const fetchItemAvailability = (id, availability) => ({
-  type: types.FETCH_ITEM_AVAILABILITY,
-  id,
+export const fetchItemAvailabilitySuccess = availability => ({
+  type: types.FETCH_ITEM_AVAILABILITY_SUCCESS,
   availability
 });
 
-export const sortItemByName = (name, items) => ({
-  type: types.SORT_BY_NAME,
-  name,
+export const sortItemByNameSuccess = items => ({
+  type: types.SORT_BY_NAME_SUCCESS,
   items
 });
 
-export const sortByAvailability = (availability, items) => ({
-  type: types.SORT_BY_NAME,
-  items,
-  availability
+export const sortByAvailabilitySuccess = items => ({
+  type: types.SORT_BY_NAME_SUCCESS,
+  items
 });

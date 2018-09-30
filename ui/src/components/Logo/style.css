@@ -43,3 +43,13 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 1025px) { /* Small */
+  .pad-large {
+    padding: 1.5em;
+  }
+  .pad-x-large {
+    padding: 2em;
+  }
+}

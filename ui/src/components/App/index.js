@@ -5,9 +5,11 @@ import SortedInventory from '../../containers/SortedInventory';
 import './style.css';
 
 const App = () => (
-  <div className="">
+  <div className="wide-100">
     <Header />
-    <SortedInventory />
+    <div className="wide-100">
+      <SortedInventory />
+    </div>
     <Footer />
   </div>
 );

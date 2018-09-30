@@ -38,3 +38,21 @@
 .high-80 {
   height: 80%;
 }
+
+.wide-100 {
+  width: 100%;
+}
+
+.high-100 {
+  height: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1025px) { /* Small */
+  .wide-80 {
+    width: 95%;
+  }
+
+  .high-80 {
+    height: 95%;
+  }
+}

@@ -7,10 +7,10 @@ const Item = ({ availability, name, make, model, year, img }) => (
   <li className="half pad-small inline">
     <div className="wide-100">
       <div className="pad-small centered bordered-item hover-darken">
-        <div className="wide-60 pad-x-small inline">
+        <div className="wide-60 pad-x-small inline centered">
           <div className="wide-100 fit-image bg-image" style={{backgroundImage: 'url(' + img + ')'}}></div>
         </div>
-        <div className="wide-40 pad-small inline align-top">
+        <div className="wide-40 pad-small inline centered align-top">
           <p><span className="small-font gray">Name: </span><strong>{name}</strong></p>
           <p><span className="small-font gray">Make: </span> {make}</p>
           <p><span className="small-font gray">Model: </span> {model}</p>

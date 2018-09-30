@@ -14,22 +14,6 @@
   max-width: 25%
 }
 
-@media screen and (min-width: 320px) and (max-width: 1025px) {
-
-  /* Small Screen */
-  .half {
-    display: inline-block;
-    width: 100%;
-    max-width: 80%;
-  }
-
-  .quarter {
-    display: inline-block;
-    width: 100%;
-    max-width: 80%
-  }
-}
-
 .bordered-item {
   border-collapse: collapse;
   border-color: rgb(128, 128, 128);
@@ -74,4 +58,38 @@
 
 .rounded {
   border-radius: 1em;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 1025px) {
+
+  /* Small Screen */
+  .half {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .quarter {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%
+  }
+
+  .wide-60 {
+    width: 90%;
+  }
+
+  .wide-40 {
+    width: 95%;
+  }
+
+  .fit-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .inline {
+    display: block;
+  }
 }

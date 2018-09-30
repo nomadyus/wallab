@@ -60,4 +60,8 @@
   .pad-x-large {
     padding: 2em;
   }
+
+  .pad-small {
+    padding: 0.4px;
+  }
 }

@@ -36,6 +36,9 @@ export const fetchInventory = () => dispatch => {
   return bffClient
     .getInventory()
     .then((items) => {
+      if (items instanceof Error) {
+        throw items;
+      }
       dispatch(receivedInventory(items));
     })
     .catch((error) => {

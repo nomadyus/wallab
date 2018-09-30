@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
     "cross-fetch": "^2.2.2",
     "http-server": "^0.11.1",
@@ -20,6 +19,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "serve": "npm run build; PORT=${PORT:-8080} node_modules/.bin/http-server build/ -p $PORT"
+    "serve": "npm run build; APP_PORT=${APP_PORT:-8080}; node_modules/.bin/http-server build/ -p $APP_PORT"
   }
 }

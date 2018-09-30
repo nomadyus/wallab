@@ -1,0 +1,26 @@
+version: '3'
+services:
+  ui:
+    container_name: wallab-ui
+    build: ui
+    environment:
+      - APP_PORT=80
+      - BFF_URL=http://bff:9001
+    ports:
+      - '80:80'
+    links:
+      - bff
+  bff:
+    container_name: wallab-bff
+    build: bff
+    environment:
+      - API_URL=http://api:9002
+    ports:
+      - '9001:9001'
+    links:
+      - api
+  api:
+    container_name: wallab-api
+    build: api
+    ports:
+      - '9002:9002'

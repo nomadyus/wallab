@@ -1,18 +1,7 @@
-.half {
-  width: 50%;
+.no-bullet {
+  list-style-type: none;
 }
 
-.quarter {
-  width: 25%
-}
-
-@media screen and (min-width: 320px) and (max-width: 1025px) {
-  /* Small Screen */
-  .half {
-    width: 80%;
-  }
-
-  .quarter {
-    width: 80%
-  }
+.uppercase {
+  text-transform: uppercase
 }

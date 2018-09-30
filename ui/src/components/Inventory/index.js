@@ -4,6 +4,8 @@ import { fetchInventoryIfNeeded, sortInventory } from '../../actions'
 import Item from '../Item';
 import { SORT_OPTIONS } from '../../constants';
 
+import './style.css';
+
 export default class Inventory extends Component {
   constructor(props) {
     super(props);
@@ -34,9 +36,9 @@ export default class Inventory extends Component {
         {
           items.length > 0 &&
           <div className="wide-100">
-            <div className="wide-100">
-              <span className="wide-90">Sort Inventory By:</span>
-              <select onChange={this.handleSortChange}>
+            <div className="wide-100 text-center">
+              <span className="wide-90 uppercase small-font text-center pad-small">Sort Inventory By:</span>
+              <select className="pad-small" onChange={this.handleSortChange}>
                 {SORT_OPTIONS.map(option => {
                   if (sort === option) {
                     return <option selected key={option.toLowerCase()} value={option.toLowerCase()}>{option}</option>
@@ -47,7 +49,7 @@ export default class Inventory extends Component {
               </select>
             </div>
 
-            <ul className="pad-small margin-small wide-90">
+            <ul className="pad-small margin-small wide-90 no-bullet">
               {items.map(item => <Item key={item.id} {...item} />)}
             </ul>
           </div>

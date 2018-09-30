@@ -4,7 +4,7 @@
 const bffClient = {
   getInventory: () => Promise.resolve([{
       id: 1,
-      img: 'http://myfancycar/image',
+      img: 'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350',
       name: 'A',
       make: 'MyMake',
       model: 'MyModel',
@@ -13,7 +13,7 @@ const bffClient = {
     },
     {
       id: 2,
-      img: 'http://myfancycar/image',
+      img: 'https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350',
       name: 'B',
       make: 'MyMake2',
       model: 'MyModel2',

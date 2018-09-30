@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Item from '../Item';
+import SorterContainer from '../../containers/SorterContainer';
 
 const Inventory = ({ items = [] }) => {
   console.log({ this: this, items });
@@ -10,6 +11,7 @@ const Inventory = ({ items = [] }) => {
   else {
     return (
       <div className="wide-80 pad-large centered">
+        <SorterContainer />
         <ul className="pad-small margin-small half">
           {items.map(item =>
             <Item
@@ -23,13 +25,17 @@ const Inventory = ({ items = [] }) => {
   };
 };
 
+// Inventory.propTypes = {
+//   items: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       id: PropTypes.number.isRequired,
+//       name: PropTypes.string.isRequired
+//     }).isRequired
+//   ).isRequired
+// };
+
 Inventory.propTypes = {
-  items: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      name: PropTypes.string.isRequired
-    }).isRequired
-  ).isRequired
-};
+    items: PropTypes.array
+}
 
 export default Inventory

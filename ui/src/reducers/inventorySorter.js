@@ -5,7 +5,9 @@ const inventorySorter = (state = {}, action) => {
     case types.SORT_BY:
       return {
         ...state,
-        items: action.items.sort(a => a[action.sortBy])
+        sorted: true,
+        sort: action.sort,
+        items: action.items
       }
     default:
       return state

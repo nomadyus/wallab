@@ -1,13 +1,13 @@
 import { connect } from 'react-redux';
-import { setSortFilter } from '../../actions';
+import { sortInventory } from '../../actions';
 import Sorter from '../../components/Sorter';
 
 const mapStateToProps = (state, ownProps) => ({
-  sortBy: ownProps.sortBy === state.sortBy
+  sort: ownProps.sort
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
-  onChange: () => dispatch(setSortFilter(ownProps.sortBy))
+  onChange: () => dispatch(sortInventory(ownProps.sort,  ownProps.items))
 });
 
 export default connect(

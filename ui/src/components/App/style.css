@@ -47,6 +47,22 @@
   height: 100%;
 }
 
+.high-10v {
+  min-height: 10vh;
+}
+
+.high-20v {
+  min-height: 20vh;
+}
+
+.high-70v {
+  min-height: 70vh;
+}
+
+.high-100v {
+  min-height: 100vh;
+}
+
 @media screen and (min-width: 320px) and (max-width: 1025px) { /* Small */
   .wide-80 {
     width: 95%;

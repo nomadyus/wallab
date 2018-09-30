@@ -1,18 +1,23 @@
 import { connect } from 'react-redux';
-import Inventory from  '../../components/Inventory';
+import Inventory from '../../components/Inventory';
 
-const mapStateToProps = state => {
+const mapStateToProps = ({ inventory }) => {
   const {
+    isFetching,
+    lastUpdated,
     items
-  } = state || {
+  } = inventory || {
+    isFetching: false,
     items: []
   };
 
   return {
-    items
+    items,
+    isFetching,
+    lastUpdated
   };
 };
 
 export default connect(
   mapStateToProps
-)(Inventory);
+  )(Inventory);

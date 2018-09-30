@@ -1,4 +1,4 @@
-export const SORT_BY = 'SORT_BY';
+export const SORT_INVENTORY = 'SORT_INVENTORY';
 
 export const REQUEST_INVENTORY = 'REQUEST_INVENTORY';
 

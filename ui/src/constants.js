@@ -9,3 +9,5 @@ export const IN_DEALERSHIP = 'In Dealership';
 export const UNAVAILABLE = 'Unavailable';
 
 export const OUT_OF_STOCK = 'Out of Stock';
+
+export const SORT_OPTIONS = ['Name', 'Availability'];

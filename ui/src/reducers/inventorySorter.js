@@ -1,9 +1,10 @@
-import { SortFilters } from '../actions';
+import * as types from '../actions/types';
+import initialState from './initialState';
 
-const sortFilter = (state = SortFilters.SORT_BY_NAME, action) => {
+const sortFilter = (state = initialState.inventory, action) => {
   switch (action.type) {
-    case 'SET_SORT_FILTER':
-      return action.sortFilter
+    case types.SET_SORT_BY:
+      return action.sortBy
     default:
       return state
   }

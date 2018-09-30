@@ -3,7 +3,7 @@ import Logo from '../Logo';
 import './style.css';
 
 const Header = () => (
-  <div className="bg-black centered spaced">
+  <div className="bg-light-black white centered pad-small">
     <Logo />
   </div>
 );

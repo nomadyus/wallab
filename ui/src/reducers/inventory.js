@@ -1,20 +1,12 @@
-const inventory = (state = [], action) => {
+import * as types from '../actions/types';
+import initialState from './initialState';
+
+const inventory = (state = initialState.inventory, action) => {
   switch (action.type) {
-    case 'ADD_TODO':
-      return [
-        ...state,
-        {
-          id: action.id,
-          text: action.text,
-          completed: false
-        }
-      ]
-    case 'TOGGLE_TODO':
-      return state.map(todo =>
-        (todo.id === action.id)
-          ? {...todo, completed: !todo.completed}
-          : todo
-      )
+    case types.FETCH_ITEMS_SUCCESS:
+      return action.items
+    case types.FETCH_ITEM_AVAILABILITY_SUCCESS:
+      return action.items
     default:
       return state
   }

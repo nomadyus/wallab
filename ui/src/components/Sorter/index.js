@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Sorter = ({ active, choices = [], onChange }) => (
   <select onChange={onChange} disabled={active}>
     {choices.map(choice => {
-      <option>choice</option>
+      <option>{choice}</option>
     })}
   </select>
 );

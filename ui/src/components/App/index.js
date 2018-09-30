@@ -5,7 +5,7 @@ import SortedInventory from '../../containers/SortedInventory';
 import './style.css';
 
 const App = () => (
-  <div>
+  <div className="">
     <Header />
     <SortedInventory />
     <Footer />

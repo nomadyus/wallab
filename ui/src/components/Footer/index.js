@@ -1,8 +1,9 @@
 import React from 'react';
+import './style.css';
 
 const Footer = () => (
   <div className="bg-black centered wide">
-    <span>Copyright 2018, Spacemango Inc. and its affiliates</span>
+    <span>© 2018 Spacemango Inc. All Rights Reserved.</span>
   </div>
 );
 

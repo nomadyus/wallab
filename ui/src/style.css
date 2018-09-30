@@ -2,27 +2,27 @@
   font-family: 'Fancy Script';
   font-style: normal;
   font-weight: 400;
-  src: url('./resources/fancyscript.woff2'); /* IE9 Compat Modes */
+  src: url('./resources/fonts/fancyscript.woff2');
   src: local('Open Sans'), local('OpenSans'),
-       url('./resources/fancyscript.woff2') format('woff2')
+       url('./resources/fonts/fancyscript.woff2') format('woff2')
 }
 
 @font-face {
   font-family: 'Roboto Bold';
   font-style: normal;
-  font-weight: 400;
-  src: url('./resources/Roboto-Bold.woff'); /* IE9 Compat Modes */
+  font-weight: 600;
+  src: url('./resources/fonts/Roboto-Bold.woff');
   src: local('Open Sans'), local('OpenSans'),
-       url('./resources/Roboto-Bold.woff') format('woff')
+       url('./resources/fonts/Roboto-Bold.woff') format('woff')
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 400;
-  src: url('./resources/Roboto-Regular.woff'); /* IE9 Compat Modes */
+  font-weight: 00;
+  src: url('./resources/fonts/Roboto-Regular.woff');
   src: local('Open Sans'), local('OpenSans'),
-       url('./resources/Roboto-Regular.woff') format('woff')
+       url('./resources/fonts/Roboto-Regular.woff') format('woff')
 }
 
 body {

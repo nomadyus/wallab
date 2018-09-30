@@ -1,30 +1,42 @@
-.logo {
+.fancy-font {
   font-family: 'Fancy Script';
 }
 
-.logo-svg {
+.animate-spin {
   animation: Spin infinite 2s linear;
+}
+
+.square-20 {
   height: 20px;
   width: 20px;
 }
 
-.logo-text {
+.pad-x-small {
   padding: 0.5em;
 }
 
-.header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.margin-x-small {
+  margin: 0.5em;
+}
+
+.pad-small {
+  padding: 1em
+}
+
+.pad-large {
+  padding: 2em;
+}
+
+.pad-x-large {
+  padding: 4em;
 }
 
 .title {
   font-size: 1.5em;
 }
 
-.intor {
-  font-size: large;
+.font-x-large {
+  font-size: x-large;
 }
 
 @keyframes Spin {

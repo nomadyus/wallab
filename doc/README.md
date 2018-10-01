@@ -18,4 +18,4 @@ The site is structured in 3 parts (the UI, the BFF, and the API). The API has th
 
 
 ## Walmart.ca website
-The architecture [diagram]() has provided shows some of the ways the architecture of the Walmart.ca site can be updated.
+The **Architecture Diagram** for the site is provided in `/doc/Architecture Diagram.pdf` and it shows some of the ways the architecture of Walmart.ca site can be updated.

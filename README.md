@@ -25,7 +25,7 @@ The UI component can be rendered by first building the application then serving 
 The BFF layer is an express App and can be easiliy started with the command `npm start`.
 
 ### API
-Just like the BFF layer the API portion of the system is an express App and can be easiliy started with the command `npm start`.
+Just like the BFF layer the API portion of the system is an express App and can be easily started with the command `npm start`.
 
 
 ****
